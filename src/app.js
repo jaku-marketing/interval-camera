@@ -1,7 +1,7 @@
 import { MAX_PHOTOS, MAX_BYTES, canStorePhoto, cropGeometry, photoFilename, IntervalSession } from './core.js';
 import { CameraSource, captureJpeg, downloadPhoto, canSharePhoto, sharePhoto, cameraError } from './camera.js';
 import { MockSource } from './mock.js';
-import { openPhotoStore } from './storage.js';
+import { openPhotoStore } from './storage.js?v=0.2.1';
 import { defaults, normalizePreferences } from './preferences.js';
 import { initializeMotion, enterScreen, animateSheet, pulse, motionScreen } from './motion.js';
 const $ = id => document.getElementById(id);
